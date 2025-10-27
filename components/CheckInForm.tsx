@@ -52,7 +52,7 @@ const CheckInForm: React.FC<CheckInFormProps> = ({ onClose, onSubmit, latestChec
         <div className="p-6">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-2xl font-bold text-brand-text">How are you feeling?</h2>
-            <button onClick={onClose} className="text-brand-subtle hover:text-brand-text">&times;</button>
+            <button onClick={onClose} aria-label="Close" className="text-brand-subtle hover:text-brand-text text-2xl leading-none">&times;</button>
           </div>
           <form onSubmit={handleSubmit} className="space-y-6">
             <Slider label="Energy" value={capacity.energy} onChange={val => updateCapacity('energy', val)} />

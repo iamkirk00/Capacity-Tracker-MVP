@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { CheckIn, LogType } from '../types';
@@ -70,10 +71,10 @@ const TimelineChart: React.FC<TimelineChartProps> = ({ data }) => {
           <YAxis domain={[0, 12]} stroke="#a0a0a0" fontSize={12} allowDecimals={false} />
           <Tooltip content={<CustomTooltip />} />
           <Legend wrapperStyle={{fontSize: "14px"}}/>
-          <Line type="monotone" dataKey="energy" stroke="#8884d8" strokeWidth={2} dot={false} name="Energy"/>
-          <Line type="monotone" dataKey="attention" stroke="#82ca9d" strokeWidth={2} dot={false} name="Attention" />
-          <Line type="monotone" dataKey="readiness" stroke="#ffc658" strokeWidth={2} dot={false} name="Readiness" />
-          <Line type="monotone" dataKey="baseline" stroke="#6b7280" strokeDasharray="5 5" name="Baseline" dot={false} strokeWidth={2} />
+          <Line type="monotone" dataKey="energy" stroke="#60a5fa" strokeWidth={2} dot={false} name="Energy"/>
+          <Line type="monotone" dataKey="attention" stroke="#34d399" strokeWidth={2} dot={false} name="Attention" />
+          <Line type="monotone" dataKey="readiness" stroke="#facc15" strokeWidth={2} dot={false} name="Readiness" />
+          <Line type="monotone" dataKey="baseline" stroke="#9ca3af" strokeDasharray="5 5" name="Baseline" dot={false} strokeWidth={2} />
           <Line type="monotone" dataKey="avg" stroke="#e94560" strokeWidth={3} activeDot={{ r: 6 }} dot={<CustomizedDot/>} name="Average Capacity" />
         </LineChart>
       </ResponsiveContainer>

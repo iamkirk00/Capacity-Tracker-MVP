@@ -30,9 +30,9 @@ const CapacityDisplay: React.FC<CapacityDisplayProps> = ({ latestCheckIn }) => {
     <div className="p-4 sm:p-6 bg-brand-surface rounded-xl shadow-lg">
       <h2 className="text-xl font-bold mb-4">Current Status</h2>
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-        <CapacityBar label="Energy" value={latestCheckIn.energy} color="bg-blue-500" />
-        <CapacityBar label="Attention" value={latestCheckIn.attention} color="bg-green-500" />
-        <CapacityBar label="Readiness" value={latestCheckIn.readiness} color="bg-purple-500" />
+        <CapacityBar label="Energy" value={latestCheckIn.energy} color="bg-brand-accent-blue" />
+        <CapacityBar label="Attention" value={latestCheckIn.attention} color="bg-brand-accent-green" />
+        <CapacityBar label="Readiness" value={latestCheckIn.readiness} color="bg-brand-secondary" />
       </div>
     </div>
   );
